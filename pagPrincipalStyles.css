@@ -48,7 +48,7 @@ body {
   place-items: center;
 }
 
-.imagen_principal img {
+.imagenPrincipal img {
   width: 96%;
   display: block;
   max-width: 100%;
