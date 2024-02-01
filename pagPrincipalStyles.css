@@ -11,6 +11,7 @@
   box-sizing: border-box;
 }
 
+/* Utilizamos el vm para que toe un valor sobre el tamaño de la ventana del usuario */
 body {
   font-family: 'Inter', sans-serif;
   height: 100vh;
