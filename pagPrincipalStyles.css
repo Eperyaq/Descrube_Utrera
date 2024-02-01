@@ -9,7 +9,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: white;
 }
 
 body {
@@ -68,6 +67,29 @@ body {
   padding-bottom: 0.5em;
   font-family: 'Playfair Display', serif;
   font-size: 2.5rem;
+}
+
+.linksInfo {
+  place-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0;
+  padding: 0;
+}
+
+.linksInfo div {
+  padding-bottom: 3em;
+}
+
+.linksInfo img {
+  width: 60%;
+  padding: 0;
+  margin: 0;
+  border-radius: 25%;
+}
+
+.linksInfo img:hover {
+  opacity: 0.8;
 }
 
 .footer {
