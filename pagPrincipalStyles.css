@@ -54,11 +54,12 @@ body {
 }
 
 .info {
-  display: grid;
-  place-items: center;
-  gap: 20px;
-  padding: 20px;
-  width: 90%;
+  text-align: center;
+  padding: 3em 5%;
+}
+
+.info h1{
+  padding-bottom: 2em;
 }
 
 .footer {
