@@ -2,14 +2,18 @@
   scroll-behavior: smooth;
 }
 
+/*Importamos fuenets de google directamente para asegurarnos de que existen y reducir el peso de la pagina*/
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Playfair+Display&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: white;
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 .header {
@@ -51,15 +55,19 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 90%;
+  padding-bottom: 1em;
 }
 
 .info {
   text-align: center;
   padding: 3em 5%;
+  opacity: 0.8;
 }
 
 .info h1{
-  padding-bottom: 2em;
+  padding-bottom: 0.5em;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
 }
 
 .footer {
