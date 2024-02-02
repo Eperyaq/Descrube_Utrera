@@ -32,6 +32,7 @@ body {
   top: 0;
   width: 100%;
   z-index: 1000;
+  font-size: large;
 }
 
 .header img {
@@ -60,27 +61,39 @@ body {
   opacity: 0.6;
 }
 
-.menu {
+/* Estilos para el contenedor del desplegable */
+.dropdown {
   position: relative;
   display: inline-block;
 }
 
-.toggle {
+/* Estilos para el botón del desplegable */
+.dropbtn {
+  color: black;
+  border: none;
+  background: transparent;
   cursor: pointer;
+  font-size: large;
 }
 
-.submenu {
+/* Estilos para el contenido desplegable (oculto por defecto) */
+.dropdown-content {
   display: none;
   position: absolute;
-  top: 100%;
-  left: 0;
   background-color: #fff;
-  border: 1px solid #ccc;
-  padding: 5px;
-  list-style: none;
+  z-index: 1;
 }
 
-.menu:hover .submenu {
+/* Estilos para los enlaces del contenido desplegable */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Mostrar el contenido desplegable al pasar el ratón sobre el contenedor */
+.dropdown:hover .dropdown-content {
   display: block;
 }
 
