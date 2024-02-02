@@ -61,6 +61,10 @@ body {
   opacity: 0.6;
 }
 
+.header ul li button:hover {
+  opacity: 0.6;
+}
+
 /* Estilos para el contenedor del desplegable */
 .dropdown {
   position: relative;
@@ -141,6 +145,7 @@ body {
 
 .linksInfo img:hover {
   opacity: 0.8;
+  transform: scale(1.2);
 }
 
 .footer {
@@ -168,13 +173,5 @@ body {
 }
 
 .stt:hover {
-  opacity: 0.8;
-}
-
-.stt:focus {
-  opacity: 0.9;
-}
-
-.stt:active {
-  opacity: 100;
+  opacity: 0.4;
 }
