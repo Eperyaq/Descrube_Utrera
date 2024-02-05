@@ -1,3 +1,4 @@
+
 :root {
   scroll-behavior: smooth;
 }
@@ -120,7 +121,7 @@ body {
 }
 
 .info {
-  text-align: left;
+  text-align: center;
   padding: 3em 20%;
   opacity: 0.8;
 }
@@ -137,10 +138,15 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   margin: 0;
   padding: 0;
+  font-size: large;
 }
 
-.linksInfo div {
-  padding-bottom: 3em;
+.linksInfo div {    
+  margin-bottom: 3em;
+}
+
+.info ~ .linksInfo > h1 {
+  margin-bottom: 5em;
 }
 
 .linksInfo img {
@@ -153,7 +159,7 @@ body {
 }
 
 .linksInfo img:hover {
-  opacity: 0.8;
+  transform: scale(1.2);
 }
 
 .footer {
@@ -181,40 +187,5 @@ body {
 }
 
 .stt:hover {
-  opacity: 0.8;
-}
-
-.stt:focus {
-  opacity: 0.9;
-}
-
-.stt:active {
-  opacity: 100;
-}
-
-.miembro {
-  width: 48%;
-  margin: 15px 0;
-  padding: 15px;
-  background-color: #ecf0f1;
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.miembro:hover {
-  transform: scale(1.05);
-}
-
-
-
-.miembro img {
-  max-width: 40%;
-  height: auto;
-  border-radius: 50%;
-}
-
-.miembro img.github { /*Me gustaria poner la pseudoclase esa que cuando pones el raton encima te sale un cuadrado con informacion y poner Enlace a github*/
-  width: 30px;
-  float: right;
+  opacity: 0.4;
 }

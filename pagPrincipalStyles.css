@@ -73,16 +73,16 @@ body {
 }
 
 /* Estilos para el botón del desplegable */
-.dropbtn {
+.dropdown button {
   color: black;
   border: none;
   background: transparent;
-  cursor: pointer;
+  cursor: pointer; /*Forzamos que el cursor a ser un pointer*/
   font-size: large;
 }
 
 /* Estilos para el contenido desplegable (oculto por defecto) */
-.dropdown-content {
+.dropdown div {
   display: none;
   position: absolute;
   background-color: #fff;
@@ -91,18 +91,21 @@ body {
 }
 
 /* Estilos para los enlaces del contenido desplegable */
-.dropdown-content a {
+.dropdown div a {
   color: black;
   text-decoration: none;
-  display: block;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
 }
 
 /* Mostrar el contenido desplegable al pasar el ratón sobre el contenedor */
-.dropdown:hover .dropdown-content {
+.dropdown:hover div {
   display: block;
 }
 
-.dropdown-content img{
+.dropdown div img{
+  margin-top: 3px; /*Usamos margin-right y margin-top para alinear la imagen con el texto detras de ella*/
+  margin-right: 10px;
   max-width: 1em;
   min-width: 1em;
 }
@@ -134,10 +137,15 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   margin: 0;
   padding: 0;
+  font-size: large;
 }
 
-.linksInfo div {
-  padding-bottom: 3em;
+.linksInfo div {    
+  margin-bottom: 3em;
+}
+
+.info ~ .linksInfo > h1 {
+  margin-bottom: 5em;
 }
 
 .linksInfo img {
@@ -150,12 +158,7 @@ body {
 }
 
 .linksInfo img:hover {
-  opacity: 0.8;
   transform: scale(1.2);
-}
-
-.linksInfo div p{
-  padding-bottom: 2em;
 }
 
 .footer {
