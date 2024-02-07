@@ -110,51 +110,7 @@ body {
   min-width: 1em;
 }
 
-/*Cambiada para hacer galeria de imagenes*/
-.imagenPrincipal{
-  width: 95%;
-  margin: auto;
-  overflow: hidden;
-}
 
-.imagenPrincipal ul{
-  display: flex;
-  padding: 0;
-  width: 300%;
-
-  animation: cambio 20s infinite;
-  animation-direction: alternate; /*Para que cuando la 4a imagen salga y vaya a pasar a la primera no sea un movimiento tosco*/
-
-}
-
-.imagenPrincipal li{
-  width: 100%;
-  list-style-type: none;
-}
-
-.imagenPrincipal img{
-  width: 100%;
-}
-/*La primera imagen esta desde el 0% hasta el 20%, del 20% al 25% es el tiempo que va a durar la imagen en pasar, desde el 25% al 45% esta la segunda imagen etc...*/
-@keyframes cambio {
-  0% { margin-left: 0;}
-  20% { margin-left: 0;}
-
-  25% { margin-left: -100%;}
-  45% { margin-left: -100%;}
-
-  50% { margin-left: -200%;}
-  70% { margin-left: -200%;}
-
-  75% { margin-left: -300%;}
-  100% { margin-left: -300%;}
-  
-}
-
-
-
-
-/*
 .imagenPrincipal img {
   display: block;
   margin-left: auto;
@@ -163,7 +119,7 @@ body {
   min-width: 90vw;
   padding-bottom: 1em;
 }
-*/
+
 
 .info {
   text-align: left;
