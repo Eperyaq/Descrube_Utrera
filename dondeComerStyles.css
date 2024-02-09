@@ -123,6 +123,7 @@ body {
   font-size: 2.5rem;
 }
 
+/*
 .linksInfo {
   place-items: center;
   display: grid;
@@ -152,6 +153,7 @@ body {
 .linksInfo img:hover {
   transform: scale(1.2);
 }
+*/
 
 .footer {
   text-align: center;
@@ -184,7 +186,6 @@ body {
 /*Cambiada para hacer galeria de imagenes*/
 .imagenPrincipal{
     width: 95%;
-    height: 95%; /*cambio la altura para que todas las fotos tengan la misma medida*/
     margin: auto;
     overflow: hidden;
   }
@@ -193,7 +194,6 @@ body {
     display: flex;
     padding: 0;
     width: 400%;
-    
   
     animation: cambio 20s infinite;
     animation-direction: alternate; /*Para que cuando la 4a imagen salga y vaya a pasar a la primera no sea un movimiento tosco*/
@@ -207,6 +207,7 @@ body {
   
   .imagenPrincipal img{
     width: 100%;
+    height: 100%;
   }
   /*La primera imagen esta desde el 0% hasta el 20%, del 20% al 25% es el tiempo que va a durar la imagen en pasar, desde el 25% al 45% esta la segunda imagen etc...*/
   @keyframes cambio {
