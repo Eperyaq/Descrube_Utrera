@@ -1,0 +1,234 @@
+
+:root {
+    scroll-behavior: smooth;
+  }
+  
+  /*Importamos fuenets de google directamente para asegurarnos de que existen y reducir el peso de la pagina*/
+  @import url('https://fonts.googleapis.com/css2?family=Inter&family=Playfair+Display&display=swap');
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Utilizamos el vm para que toe un valor sobre el tamaño de la ventana del usuario */
+  body {
+    font-family: 'Inter', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: visible;
+  }
+  
+  .header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    font-size: large;
+  }
+  
+  .header img {
+    max-width: 20vw;
+    min-width: 20vw;
+  }
+  
+  .header ul {
+    list-style-type: none;
+    display: flex;
+    padding-right: 1em;
+  }
+  
+  .header ul li {
+    margin-right: 1em;
+  }
+  
+  .header ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+    
+  }
+  
+  .header ul li a:hover {
+    opacity: 0.6;
+  }
+  
+  .header ul li button:hover {
+    opacity: 0.6;
+  }
+  
+  /* Estilos para el contenedor del desplegable */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Estilos para el botón del desplegable */
+  .dropdown button {
+    color: black;
+    border: none;
+    background: transparent;
+    cursor: pointer; /*Forzamos que el cursor a ser un pointer*/
+    font-size: large;
+  }
+  
+  /* Estilos para el contenido desplegable (oculto por defecto) */
+  .dropdown div {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: black solid 0.2em;  
+    z-index: 1;
+  }
+  
+  /* Estilos para los enlaces del contenido desplegable */
+  .dropdown div a {
+    color: black;
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+  }
+  
+  /* Mostrar el contenido desplegable al pasar el ratón sobre el contenedor */
+  .dropdown:hover div {
+    display: block;
+  }
+  
+  .dropdown div img{
+    margin-top: 3px; /*Usamos margin-right y margin-top para alinear la imagen con el texto detras de ella*/
+    margin-right: 10px;
+    max-width: 1em;
+    min-width: 1em;
+  }
+  
+  .imagenPrincipal img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90vw;
+    min-width: 90vw;
+    padding-bottom: 1em;
+  }
+ 
+  
+  .info {
+    text-align: center;
+    padding: 3em 20%;
+    opacity: 0.8;
+  }
+  
+  .info h1{
+    padding-bottom: 0.5em;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+  }
+  
+  .linksInfo {
+    place-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
+    padding: 0;
+    font-size: large;
+  }
+  
+  .linksInfo div {    
+    margin-bottom: 3em;
+  }
+  
+  .info ~ .linksInfo > h1 {
+    margin-bottom: 5em;
+  }
+  
+  .linksInfo img {
+    max-width: 15vw;
+    min-width: 15vw;
+    padding: 0;
+    margin: 0;
+    border-radius: 25%;
+    border: 5px solid black;
+  }
+  
+  .linksInfo img:hover {
+    transform: scale(1.2);
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    z-index: 1000;
+  }
+  
+  .stt {
+    position: fixed;
+    right: 0.5em;
+    bottom: 0.5em;
+    max-width: 3em;
+    max-height: 3em;
+    border-radius: 50%;
+    opacity: 1;
+    z-index: 999;
+  }
+  
+  .stt img {
+    max-width: 3em;
+    max-height: 3em;
+  }
+  
+  .stt:hover {
+    opacity: 0.4;
+  }
+/*---------------------------------------------------------------*/
+
+.slider{
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+  
+    animation: cambio 20s infinite;
+    animation-direction:alternate; /*Para que cuando la 4a imagen salga y vaya a pasar a la primera no sea un movimiento tosco*/
+  
+  }
+  
+  .slider li{
+    width: 100%;
+    list-style-type: none;
+  }
+  
+  .slider img{
+    width: 100%;
+    height: 100%;
+  }
+  /*La primera imagen esta desde el 0% hasta el 20%, del 20% al 25% es el tiempo que va a durar la imagen en pasar, desde el 25% al 45% esta la segunda imagen etc...*/
+  @keyframes cambio {
+    0% { margin-left: 0;}
+    20% { margin-left: 0;}
+  
+    25% { margin-left: -100%;}
+    45% { margin-left: -100%;}
+  
+    50% { margin-left: -200%;}
+    70% { margin-left: -200%;}
+  
+    75% { margin-left: -300%;}
+    100% { margin-left: -300%;}
+    
+  }
