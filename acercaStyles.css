@@ -200,8 +200,9 @@ body {
   padding: 15px;
   background-color: #ecf0f1;
   border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 1);
   transition: transform 0.3s ease;
+
 }
 
 .miembro:hover {
@@ -216,7 +217,7 @@ body {
   border-radius: 50%;
 }
 
-.miembro img.github { /*Me gustaria poner la pseudoclase esa que cuando pones el raton encima te sale un cuadrado con informacion y poner Enlace a github*/
+.miembro img.github { 
   width: 30px;
   float: right;
 }
