@@ -194,7 +194,7 @@ body {
   opacity: 100;
 }
 
-.miembro {
+.miembro { /*Efecto del div de los miembros, para que se vea animado y con las medidas que buscamos*/
   width: 48%;
   margin: 15px 0;
   padding: 15px;
@@ -205,11 +205,9 @@ body {
 
 }
 
-.miembro:hover {
+.miembro:hover {/*Cuando pongas el raton encima la imagen crecerá*/
   transform: scale(1.05);
 }
-
-
 
 .miembro img {
   max-width: 40%;
